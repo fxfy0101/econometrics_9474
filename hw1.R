@@ -14,12 +14,16 @@ png(filename = "Documents/Data/temp_anomalies.png", width = 8, height = 6,
 plot(temp, xlab = "time", ylab = "temperature", family = "serif")
 dev.off()
 
+### calculate the sample autocorrelation function
+acf(temp, lag.max = 9, plot = FALSE)
 ### plot the sample autocorrelation functions
 png(filename = "Documents/Data/raw_acf.png", width = 8, height = 6, 
     units = "in", res = 300)
 acf(temp, lag.max = 9, xlab = "lags", main = "", family = "serif")
 dev.off()
 
+### calculate the sample autocorrelation function
+acf(diff(temp), lag.max = 9, plot = FALSE)
 png(filename = "Documents/Data/diff_acf.png", width = 8, height = 6, 
     units = "in", res = 300)
 acf(diff(temp), lag.max = 9, xlab = "lags", main = "", family = "serif")
