@@ -19,8 +19,7 @@ x_1 = 0.5 + epsilon[0]
 x = [x_0, x_1]
 ### generate ARMA(2, 2) series
 for i in range(10000):
-    (x.append(x[-1] - (1/4)*x[-2] + epsilon[i + 2] + 
-    (1/4)*epsilon[i + 1] + (1/4)*epsilon[i]))
+    x.append(x[-1] - (1/4)*x[-2] + epsilon[i + 2] + (1/4)*epsilon[i + 1] + (1/4)*epsilon[i])
 ### calculate autocovariance
 rho_sim = acf(x, nlags=9)
 
