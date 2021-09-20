@@ -9,6 +9,4 @@
 
 ### Homework 2
 
-- Given an ARMA(2, 2) process: $$\alpha(L) = \beta(L)\varepsilon_t$$ $$\alpha(z) = 1 - z + \frac{1}{4}z^2$$ $$\beta(z) = 1 + \frac{1}{4}z + \frac{1}{4}z^2$$ Graph $\rho(k)$ up to $k = 9$ using 
-
-<img src="https://render.githubusercontent.com/render/math?math=e^{i \pi} = -1">
+- Given an ARMA(2, 2) process with alpha lag polynominal [1, -1, 1/4] and beta lag polynominal [1, 1/4, 1/4], graph the autocorrelation up to k = 9. Use Yule-Walker and MA technique to calculate autocovariance.
