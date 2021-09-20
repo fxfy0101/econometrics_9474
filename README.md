@@ -1,1 +1,6 @@
-Ecnonometrics homework coding part solutions
+# 9474 Advanced Topics in Econometrics I
+
+## Coding Question Solutions
+
+### Homework 1
+
