@@ -4,7 +4,7 @@
 
 ### Homework 1
 
-- Plot temperature anomalies over time.
+- Use data in the file `anomaly.csv`. Plot temperature anomalies over time.
 - Estimate and plot the sample autocorrelation functions of the raw series and its first difference.
 
 ### Homework 2
