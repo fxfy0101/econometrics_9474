@@ -16,6 +16,18 @@ consumptions["log_expen"] = np.log(consumptions.expenditure)
 reg_expen = smf.ols("log_expen ~ t", data=consumptions).fit()
 detrend_expen = reg_expen.resid
 
+def fpe(model, lag, sample_size):
+    """
+    statsmodels module in Python calculate fpe automatically
+    but with a different method. They use the degree of freedom instead
+    of original sample size to calculate sigma2. They also subtract the
+    lags from the original sample size as the new sample size to
+    calculate fpe.
+    This function is defined according to formula in the note.
+    """
+    sigma2 = np.sum((model.resid)**2) / sample_size
+    return sigma2 * (sample_size + lag) / (sample_size - lag)
+
 # %%
 ### part (a)
 
