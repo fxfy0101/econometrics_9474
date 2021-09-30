@@ -9,10 +9,7 @@ anomaly <- rename(anomaly, temp = X1)
 temp <- ts(anomaly$temp, start = 1850, frequency = 1)
 
 ### plot the temperature anomalies
-png(filename = "Documents/Data/temp_anomalies.png", width = 8, height = 6, 
-    units = "in", res = 300)
 plot(temp, xlab = "time", ylab = "temperature", family = "serif")
-dev.off()
 
 ### calculate the sample autocorrelation function
 acf(temp, lag.max = 9, plot = FALSE)
