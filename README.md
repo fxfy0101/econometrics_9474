@@ -14,7 +14,7 @@
 ### Homework 3
 
 - Given an AR(2) process with alpha lag polynominal [1, 1/6, -1/6], use the power transfer function to plot the densities over [0, pi].
-- Simulate an AR(2) process of length n = 1000 and then estimate the densities with a Bartlett window of 10.
+- Simulate an AR(2) process of length $n = 1000$ and then estimate the densities with a Bartlett window of 10.
 - Use data in the file `sales.csv`. Linearly detrend the log of each series. Estimate the spectral densities of the two series and their first differences using a Bartlett window of 18.
 
 ### Homework 5
